@@ -1,0 +1,10 @@
+/var/log/grafana/*.log {
+  weekly
+  size 50M
+  missingok
+  rotate 10
+  compress
+  delaycompress
+  notifempty
+  copytruncate
+}
