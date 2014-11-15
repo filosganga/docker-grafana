@@ -19,12 +19,12 @@ function (Settings) {
     datasources: {
       graphite: {
         type: 'graphite',
-        url: "http://my.graphite.server.com:8080",
+        url: "http://{{GRAPHITE_HOST}}:{{GRAPHITE_PORT}}",
       },
       elasticsearch: {
         type: 'elasticsearch',
-        url: "http://my.elastic.server.com:9200",
-        index: 'grafana-dash',
+        url: "http://{{ELASTICSEARCH_HOST}}:{{ELASTICSEARCH_PORT}}",
+        index: '{{ELASTICSEARCH_INDEX}}',
         grafanaDB: true,
       }
     },

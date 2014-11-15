@@ -49,4 +49,4 @@ VOLUME ["/srv/grafana", "/etc/nginx", "/etc/logrotate.d", "/var/log"]
 
 ENV HOME /root
 # Use baseimage-docker's init system.
-CMD ["/sbin/my_init"]
+ENTRYPOINT ["/sbin/my_init"]
